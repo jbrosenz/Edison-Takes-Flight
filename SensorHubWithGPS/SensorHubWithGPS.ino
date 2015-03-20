@@ -19,8 +19,18 @@
     Contact Information:
   Joel Rosenzweig, joel.b.rosenzweig@intel.com
     
+    We wish to thank the following authors for their contributions to the open source community:
+    
+    Mikal Hart, for TinyGPS++, http://arduiniana.org/libraries/tinygps/
+    Bill Porter, for EasyTransfer, http://www.billporter.info/2011/05/30/easytransferarduino-library/
+    Adafruit’s, Kevin Townsend, for the Sensor libraries, https://learn.adafruit.com/adafruit-10-dof-imu-breakout-lsm303-l3gd20-bmp180/software/
+    I.Kövesdi, for the Great Circle Distance and Great Circle Bearing calculation, http://obex.parallax.com/object/256
+    Alex, for his blog posting on magnetometer calibration, http://theboredengineers.com/2014/11/magnometer-calibration/
+    Alex, for his blog posting on a low pass filter, http://theboredengineers.com/2012/09/the-quadcopter-get-its-orientation-from-sensors/
+    
 *******************************************************************************/
-// Arduino Pro/Mini, ATMEGA 382P, 3.3v 8MHZ
+// Arduino Pro/Mini, ATMEGA 328P, 3.3v 8MHZ
+// The target for this source code is the ATMEGA 328P, residing on the Sparkfun Arduino breakout board.
 
 #include <Wire.h>
 #include <Adafruit_Sensor.h>
