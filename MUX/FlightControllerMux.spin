@@ -24,6 +24,11 @@
 }}
 {{ FlightControllerMux.spin }}
 {{     
+The target for this source code is the Parallax Propeller Quickstart board.
+Use the Parallax Propeller IDE to compile it and program the target.
+Uses FullDuplexSerialExtended and FullDuplexSerialPlus from the Parallax OBEX.  
+
+We wish to thank Chip Gracey and Martin Hebel for FullDuplexSerialExtended
 
 Cog usage:  TX digitizer Throttle, Pitch, Roll, Yaw, Mode = 5
             Flight Controller PWM output                  = 1
