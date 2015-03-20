@@ -20,6 +20,13 @@
   Joel Rosenzweig, joel.b.rosenzweig@intel.com
     
 *******************************************************************************/
+// In the original prototype, an ATMEGA 328P resides between the Intel(R) Edison and the XBEE radio.
+// It shares the same UART as the Linux console.
+// This ATMEGA is used to filter out the Linux console output when being sent at 115200 baud, which keeps it from putting
+// the XBEE in a bad state.  The flight controller uses the XBEE radio at 57600.  The telemetry relay, simply forwards all
+// characters that are valid, printable characters, to the radio.  Anything at the wrong baud rate is filtered out.
+// A better solution is simply to reset the XBEE under program control (via GPIO) once Edison has finished booting.  
+// But, time won out and it was faster to wire up this controller to do the job.
 
 int i = 0;
 char ch;
