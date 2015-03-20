@@ -42,6 +42,10 @@ void LogTelemetry(char *msg)
     write(fd, msg, strlen(msg));
 }
 
+// Sets the system date with a given MMDDYY
+// This isn't being used right now.  The idea was to pass in a GPS date and time string
+// to update the system with the correct time on each boot.  As we log files, the creation time would be made accurate.
+// This function isn't complete.  It doesn't parse the time.  May revisit this function and see if it's worthwhile to complete it.
 void setDate(const char* dataStr)  // format like MMDDYY
 {
   char buf[3] = {0};
